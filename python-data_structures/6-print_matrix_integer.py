@@ -3,9 +3,10 @@ def print_matrix_integer(matrix=[[]]):
 
     if matrix:
         for row in matrix:
-            for element in row:
-                if element == len(row):
-                    print("{:d}".format(element), end="")
-                else:
-                    print("{:d}".format(element), end=" ")
+            for i, element in enumerate(row):
+                # Format each element
+                print("{:d}".format(element), end="")
+                # Add space if it's not the last element in the row
+                if i < len(row) - 1:
+                    print(" ", end="")
             print()
