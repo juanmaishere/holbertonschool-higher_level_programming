@@ -11,4 +11,5 @@ def roman_to_int(roman_string):
                 if letter < eldict[i]:
                     num -= 2 * letter
                     letter = eldict[i]
-    return (num)
+        return (num)
+    return (None)
