@@ -4,8 +4,8 @@ def roman_to_int(roman_string):
               'D': 500, 'M': 1000}
     num = 0
     letter = 0
-    if not roman_string or roman_string == None:
-        return (num)
+    if not roman_string or roman_string is None:
+        return (0)
     if roman_string:
         for i in roman_string:
             if i in eldict:
@@ -14,3 +14,4 @@ def roman_to_int(roman_string):
                     num -= 2 * letter
                     letter = eldict[i]
         return (num)
+    return (0)
