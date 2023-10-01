@@ -1,0 +1,23 @@
+Caso numero 1 MATH:
+Input: 10, 20
+Expected Output: 30
+
+Caso 2 INT CAST a:
+Input: 15.5, 5
+Expected Output: 20
+
+Caso 3 INT CAST b:
+Input: 7, 3.5
+Expected Output: 10
+
+Caso 5 a y b cast int:
+Input: 3.2, 4.8
+Expected Output: 8
+
+Test Case 6 Error:
+Input: 10, "not_an_integer"
+Expected Output: TypeError: b must be an integer
+
+Test Case 7 Error:
+Input: "error", 10
+Expected Output: a must be an integer
