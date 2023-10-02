@@ -4,7 +4,7 @@ Definition of a class Rectangle with pass placeholder
 """
 
 
-class Square:
+class Rectangle:
 
     """
     Class Rectangle with no attributes
