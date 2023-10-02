@@ -5,10 +5,20 @@ Definition of a class Rectangle with pass placeholder
 
 
 class Rectangle:
-
+    """
+    Class rectangule with
+    :width: widht of rectangle
+    :height rectangle
+    """
     def __init__(self, width=0, height=0):
-        self.__width = width
+        """
+        Initializes a new square with the specified size.
+
+        :param size: The size of the square.
+        :type size: int
+        """
         self.__height = height
+        self.__width = width
 
     @property
     def width(self):
