@@ -13,6 +13,12 @@ class Rectangle:
     Class rectangle with width and height
     """
     def __init__(self, width=0, height=0):
+        """
+        @param
+        @width
+        @height
+        Class rectangle with width and height
+        """
         self.__width = width
         self.__height = height
 
@@ -56,10 +62,12 @@ class Rectangle:
             return d + c
 
     def __str__(self):
-
-        if self.__width == 0 or self.__height == 0:
-            return("")
+        """
+        String function for returning form
+        """
         result = ""
+        if self.__width == 0 or self.__height == 0:
+            return result
         for i in range(self.__height):
             for j in range(self.__width):
                 result += "#"
