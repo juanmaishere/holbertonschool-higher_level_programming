@@ -17,8 +17,8 @@ class Rectangle:
         :param size: The size of the square.
         :type size: int
         """
-        self.__height = height
-        self.__width = width
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
