@@ -102,8 +102,7 @@ class Rectangle:
             Rectangle.number_of_instances -= 1
             del self
             print("Bye rectangle...")
-    
+
     @classmethod
     def square(cls, size=0):
-        if size >= 0:
-            return (cls(size, size))
+        return (cls(size, size))
