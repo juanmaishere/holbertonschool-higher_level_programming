@@ -26,6 +26,6 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 [1, 1, 2, 3, 3]
 
 # Test Case 6: passing strings
->>> my_list = MyList([“hola”, “mundo”, “perro”])
+>>> my_list = MyList("hola", "mundo", "perro")
 >>> my_list.print_sorted()
 ['hola', 'mundo', 'perro']
