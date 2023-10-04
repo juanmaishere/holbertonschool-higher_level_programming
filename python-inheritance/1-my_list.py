@@ -1,6 +1,7 @@
 #!/bin/usr/python3
 """
 my list class with method for printing
+you can assume its a list
 """
 
 
@@ -13,5 +14,4 @@ class MyList(list):
         """
         print the list
         """
-        self = sorted(self)
-        print(self)
+        print(sorted(self))
