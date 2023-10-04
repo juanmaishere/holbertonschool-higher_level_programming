@@ -10,5 +10,8 @@ class MyList(list):
     :print_sorted print all list
     """
     def print_sorted(self):
+        """
+        print the list
+        """
         self = sorted(self)
         print(self)
