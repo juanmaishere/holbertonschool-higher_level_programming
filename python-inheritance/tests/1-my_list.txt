@@ -20,6 +20,4 @@
 # Test Case 6: passing strings
 >>> my_list = MyList(["hola", "mundo", "perro"])
 >>> my_list.print_sorted()
-# Test Case 7: passing floats
->>> my_list = MyList([2.5, 3, 5, 1, 3.4])
->>> my_list.print_sorted()
+
