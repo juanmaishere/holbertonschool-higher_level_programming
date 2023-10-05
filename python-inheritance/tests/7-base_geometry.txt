@@ -29,3 +29,15 @@ TypeError: lala must be an integer
 Traceback (most recent call last):
 TypeError: lala must be an integer
 >>> bg.integer_validator(123, 777)
+>>> bg.integer_validator("lala", )
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+>>> bg.integer_validator(, 777)
+>>> bg.integer_validator("lala", 12,5)
+Traceback (most recent call last):
+>>> bg.integer_validator("lala", -12,5)
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
+>>> bg.integer_validator("lala", False)
+Traceback (most recent call last):
+>>> bg.integer_validator("lala", True)
