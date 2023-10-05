@@ -1,4 +1,14 @@
-def integer_validator(self, name, value):
+#!/usr/bin/python3
+"""Declaration of A BaseGeometry Class"""
+
+
+class BaseGeometry:
+    """ Pass Placeholder """
+
+    def area(self):
+        raise Exception("area() is not implemented")
+
+    def integer_validator(self, name, value):
         """function to validate an itenger"""
         if isinstance(name, str):
             self.name = name
