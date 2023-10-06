@@ -10,6 +10,7 @@ class MyList(list):
     def print_sorted(self):
         """
         print the list
+        in order alphabetical
         """
         if all(isinstance(x, int) for x in self):
             print(sorted(self))
