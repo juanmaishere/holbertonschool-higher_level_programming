@@ -8,4 +8,4 @@ def from_json_string(my_str):
     Function to load a str from json format
     """
     c = json.load(my_str)
-    return c
+    return my_str
