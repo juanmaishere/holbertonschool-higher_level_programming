@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 from models.base import Base
-""" Summary Class rectangle"""
+"""Class rectangle"""
 
 
 class Rectangle(Base):
@@ -10,7 +10,7 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initialize width height x and y , public setter and getter.
-        :width width of rectangle
+        :width width of rectangle 
         :height height of rectangle
         :x and y position
         """
@@ -19,14 +19,20 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-
+    
     @property
     def width(self):
         return self.__width
 
     @width.setter
     def width(self, value):
-        self.__width = value
+        if (isinstance(value, int)):
+            if value >= 0:
+                self.__width = value
+            else:
+                raise ValueError("width must be >= 0")
+        else:
+            raise TypeError("width must be an integer")
 
     @property
     def height(self):
@@ -34,7 +40,13 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        self.__height = value
+        if (isinstance(value, int)):
+            if value >= 0:
+                self.__height = value
+            else:
+                raise ValueError("height must be >= 0")
+        else:
+            raise TypeError("height must be an integer")
 
     @property
     def x(self):
