@@ -1,15 +1,18 @@
 #!/usr/bin/python3
 from models.base import Base
-""" Summary """
+""" Summary Class rectangle"""
 
 
 class Rectangle(Base):
     """
-    Rectangle class
+    Rectangle class With public getter and setter
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initialize width height x and y , public setter and getter.
+        :width width of rectangle
+        :height height of rectangle
+        :x and y position
         """
         super().__init__(id)
         self.width = width
