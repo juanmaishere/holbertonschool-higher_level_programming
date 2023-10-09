@@ -11,7 +11,7 @@ class Rectangle(Base):
         """
         Initialize width height x and y , public setter and getter.
         """
-        super().__init__(id)
+        self.__id = super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
