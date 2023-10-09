@@ -4,6 +4,10 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """
+    Clase rectangulo
+    con getter y setter
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initialize width height x and y , public setter and getter.
