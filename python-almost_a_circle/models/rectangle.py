@@ -11,11 +11,11 @@ class Rectangle(Base):
         """
         Initialize width height x and y , public setter and getter.
         """
-        self.__id = super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        super().__init__(id)
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
