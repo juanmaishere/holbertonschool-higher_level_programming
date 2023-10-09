@@ -1,6 +1,7 @@
 import unittest
 from models.base import Base
 
+
 class Test1Methods(unittest.TestCase):
     def test_id_assignment(self):
         # Test if the id is correctly assigned when provided
