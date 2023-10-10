@@ -99,11 +99,12 @@ class Rectangle(Base):
 - {self.width}/{self.height}"
 
     def update(self, *args):
+        """Update function to update all value at once"""
         x = 0
         for attr in args:
             x += 1
             if x == 1:
-                self.id = attr            
+                self.id = attr
             elif x == 2:
                 self.width = attr
             elif x == 3:
