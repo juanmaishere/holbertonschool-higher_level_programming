@@ -2,8 +2,6 @@
 """summary"""
 import json
 
+
 def class_to_json(obj):
-
-    dict_ = obj.__dict__
-
-    return dict_
+    return obj.__dict__
