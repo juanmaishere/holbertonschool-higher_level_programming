@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Class rectangle"""
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -31,7 +31,7 @@ class Rectangle(Base):
             if value >= 0:
                 self.__width = value
             else:
-                raise ValueError("width must be >= 0")
+                raise ValueError("width must be > 0")
         else:
             raise TypeError("width must be an integer")
 
@@ -45,7 +45,7 @@ class Rectangle(Base):
             if value >= 0:
                 self.__height = value
             else:
-                raise ValueError("height must be >= 0")
+                raise ValueError("height must be > 0")
         else:
             raise TypeError("height must be an integer")
 
@@ -76,3 +76,17 @@ class Rectangle(Base):
                 raise ValueError("y must be >= 0")
         else:
             raise TypeError("y must be an integer")
+
+    def area(self):
+        return self.__width * self.__height
+
+    def display(self):
+        print("\n" * self.y, end="")
+        for i in range(self.__height):
+            print(" " * self.x, end="")
+            for j in range(self.__width):
+                print("#", end="")
+            print()
+
+    def __str__(self):
+        return f"[Rectangle] {self.id} {self.x}/{self.y} - {self.width}/{self.height}"
