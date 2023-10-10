@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Class rectangle"""
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -12,8 +12,6 @@ class Rectangle(Base):
         """
         Initialize width height x and y , public setter and getter.
         :width width of rectangle
-        :height height of rectangle
-        :x and y position
         """
         super().__init__(id)
         self.width = width
@@ -78,14 +76,9 @@ class Rectangle(Base):
             raise TypeError("y must be an integer")
 
     def area(self):
-        """ Area que devuelve area """
         return self.__width * self.__height
 
     def display(self):
-        """
-        Printea el rectangulo con su width height
-        Considerando x y posicion de eje
-        """
         print("\n" * self.y, end="")
         for i in range(self.__height):
             print(" " * self.x, end="")
@@ -94,12 +87,10 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """ Str return """
         return f"[Rectangle] {self.id} {self.x}/{self.y} \
 - {self.width}/{self.height}"
 
     def update(self, *args):
-        """Update function to update all value at once"""
         x = 0
         for attr in args:
             x += 1
