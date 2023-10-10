@@ -10,8 +10,12 @@ class Rectangle(Base):
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Initialize width height x and y , public setter and getter.
-        :width width of rectangle
+        Initialize a rectangle with width, height, x, and y coordinates.
+        :param width: Width of the rectangle (must be a positive integer).
+        :param height: Height of the rectangle (must be a positive integer).
+        :param x: X-coordinate of the top-left corner non-negative integer).
+        :param y: Y-coordinate of the top-left corner non-negative integer).
+        :param id: Identifier for the rectangle.
         """
         super().__init__(id)
         self.width = width
@@ -79,6 +83,10 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
+        """
+        Display the rectangle as a series of
+        '#' characters with proper positioning.
+        """
         print("\n" * self.y, end="")
         for i in range(self.__height):
             print(" " * self.x, end="")
@@ -91,6 +99,11 @@ class Rectangle(Base):
 - {self.width}/{self.height}"
 
     def update(self, *args):
+        """
+        Update the attributes of the rectangle using a variable-length
+        argument list. The arguments should be provided in the order:
+        id, width, height, x, y.
+        """
         x = 0
         for attr in args:
             x += 1
