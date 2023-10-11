@@ -23,3 +23,14 @@ class Test1Methods(unittest.TestCase):
         self.assertEqual(obj1.id, 1)
         self.assertEqual(obj2.id, 2)
         self.assertEqual(obj3.id, 3)
+
+    class TestBaseErrorMethods(unittest.TestCase):
+    def test_negative_id_assignment(self):
+        # Test if ValueError is raised when a negative id is assigned
+        with self.assertRaises(ValueError):
+            obj = Base(-1)
+
+    def test_non_integer_id_assignment(self):
+        # Test if TypeError is raised when a non-integer id is assigned
+        with self.assertRaises(TypeError):
+            obj = Base("string_id")
