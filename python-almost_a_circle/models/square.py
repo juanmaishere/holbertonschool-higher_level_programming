@@ -54,12 +54,3 @@ class Square(Rectangle):
                     self.x = attr
                 elif x == 5:
                     self.y = attr
-
-    def to_dictionary(self):
-        return {
-            'id': self.id,
-            'width': self.width,
-            'height': self.height,
-            'x': self.x,
-            'y': self.y
-        }
