@@ -88,7 +88,7 @@ class Rectangle(Base):
     def display(self):
         """
         Display the rectangle as a series of
-        '#' characters with proper positioning.
+        characters with proper positioning
         """
         print("\n" * self.y, end="")
         for i in range(self.__height):
