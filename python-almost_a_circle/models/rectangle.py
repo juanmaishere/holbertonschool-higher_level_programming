@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Class rectangle"""
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -95,25 +95,30 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        return f"[Rectangle] {self.id} {self.x}/{self.y} \
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} \
 - {self.width}/{self.height}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Update the attributes of the rectangle using a variable-length
         argument list. The arguments should be provided in the order:
         id, width, height, x, y.
         """
-        x = 0
-        for attr in args:
-            x += 1
-            if x == 1:
-                self.id = attr
-            elif x == 2:
-                self.width = attr
-            elif x == 3:
-                self.height = attr
-            elif x == 4:
-                self.x = attr
-            elif x == 5:
-                self.y = attr
+        if not args:
+            for nm, value in kwargs.items():
+                if hasattr(self, nm):
+                    setattr(self, nm, value)
+        else:
+            x = 0
+            for attr in args:
+                x += 1
+                if x == 1:
+                    self.id = attr
+                elif x == 2:
+                    self.width = attr
+                elif x == 3:
+                    self.height = attr
+                elif x == 4:
+                    self.x = attr
+                elif x == 5:
+                    self.y = attr
