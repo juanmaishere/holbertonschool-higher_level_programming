@@ -31,3 +31,26 @@ class Square(Rectangle):
     def size(self, value):
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """
+        Update the attributes of the rectangle using a variable-length
+        argument list. The arguments should be provided in the order:
+        id, width, height, x, y.
+        """
+        if not args:
+            for nm, value in kwargs.items():
+                if hasattr(self, nm):
+                    setattr(self, nm, value)
+        else:
+            x = 0
+            for attr in args:
+                x += 1
+                if x == 1:
+                    self.id = attr
+                elif x == 2:
+                    self.size = attr
+                elif x == 4:
+                    self.x = attr
+                elif x == 5:
+                    self.y = attr
