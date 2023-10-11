@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Class rectangle"""
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -80,6 +80,9 @@ class Rectangle(Base):
             raise TypeError("y must be an integer")
 
     def area(self):
+        """
+        area method to return area
+        """
         return self.__width * self.__height
 
     def display(self):
@@ -95,6 +98,9 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """
+        str method to return string
+        """
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} \
 - {self.width}/{self.height}"
 
