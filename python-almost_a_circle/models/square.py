@@ -21,4 +21,4 @@ class Square(Rectangle):
         """
         str returns string
         """
-        return f"[Square] ({self.id}) {self.y}/<{self.x} - {self.width}"
+        return f"[Square] ({self.id}) {self.x}/<{self.y} - {self.width}"
