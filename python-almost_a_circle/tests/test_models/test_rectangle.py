@@ -1,7 +1,7 @@
 import unittest
-from rectangle import Rectangle  # Import the Rectangle class from your module
+from models.rectangle import Rectangle  # Import the Rectangle class from your module
 
-class TestRectangle(unittest.TestCase):
+class testRectangle(unittest.TestCase):
     def test_constructor(self):
         r = Rectangle(5, 10, 2, 3, 1)
         self.assertEqual(r.width, 5)
