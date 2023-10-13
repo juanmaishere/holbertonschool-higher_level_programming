@@ -130,6 +130,10 @@ class Rectangle(Base):
                     self.y = attr
 
     def to_dictionary(self):
+        """
+        to dictionary method
+        returns a dictioonary of attributes
+        """
         return {
             'x': self.x,
             'y': self.y,
