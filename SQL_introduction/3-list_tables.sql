@@ -1,4 +1,4 @@
---Listing ALL TABLES FROM X DATABASE
+-- Listing ALL TABLES FROM X DATABASE
 
---Listing tables
+-- Listing tables
 SHOW TABLES;

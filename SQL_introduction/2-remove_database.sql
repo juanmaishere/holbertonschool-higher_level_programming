@@ -1,4 +1,4 @@
---Delete DATABASE if Its created already
+-- Delete DATABASE if Its created already
 
---Deletes a datanse only if it exists
-DROP DATABASE hbtn_0c_0;
+-- Deletes a datanse only if it exists
+DROP DATABASE IF EXISTS hbtn_0c_0;
