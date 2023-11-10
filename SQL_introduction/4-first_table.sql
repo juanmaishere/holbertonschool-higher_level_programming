@@ -1,7 +1,7 @@
 -- Create TABLES for X DATABASE
 
--- create table :D
-CREATE TABLE IF NOT EXISTS first_table (
-    id INT
+-- Create table if it exists
+CREATE TABLE IF EXISTS first_table (
+    id INT,
     name VARCHAR(256)
 );
