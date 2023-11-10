@@ -1,3 +1,3 @@
 --Listing TABLE DATABASE
 --Listing table
-SHOW TABLE;
+SHOW TABLES;
