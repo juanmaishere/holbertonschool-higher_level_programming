@@ -1,3 +1,4 @@
---Listing TABLE DATABASE
---Listing table
+--Listing ALL TABLES FROM X DATABASE
+
+--Listing tables
 SHOW TABLES;
