@@ -1,4 +1,6 @@
 -- Display a fulll table :D
 
--- Show all data in a table
-EXEC sp_help hbtn_0c_0;
+-- Get table structure information without using DESCRIBE or EXPLAIN
+SELECT COLUMN_NAME, DATA_TYPE, IS_NULLABLE, COLUMN_KEY, COLUMN_DEFAULT
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'first_table';
