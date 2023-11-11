@@ -1,16 +1,16 @@
--- CREATE TABLE AND ADD MULTIPLE ROWS
+-- Create table and insert rows
 
--- CREATE Table
+-- CREATE TABLE IF NOT EXISTS
 CREATE TABLE IF NOT EXISTS second_table (
     id INT,
     name VARCHAR(256),
-    score INT,
+    score INT
 );
 
--- ADD Multiples ROWS
+-- INSERT MULTIPLE ROWS
 INSERT INTO second_table
 VALUES
-(id = 1, name = "John", score = 10),
-(id = 2, name = "Alex", score = 3),
-(id = 3, name = "Bob", score = 14),
-(id = 4, name = "George", score = 8);
+    (1, 'John', 10),
+    (2, 'Alex', 3),
+    (3, 'Bob', 14),
+    (4, 'George', 8);
