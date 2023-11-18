@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-from sys import argv
-import MySQLdb
 """
 List all states from a database sql query
 """
+from sys import argv
+import MySQLdb
 
 if __name__ == "__main__":
-    """
-    List all states from a database sql query
-    """
     username = argv[1]
     password = argv[2]
     database = argv[3]
