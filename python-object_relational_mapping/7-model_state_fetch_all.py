@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Make a query from sqlalchemy
+"""
 from sys import argv
 from model_state import Base
 from model_state import State
